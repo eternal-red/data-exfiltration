@@ -1,0 +1,1 @@
+Send-EMail -EmailTo "Myself@gmail.com" -Body "Test Body" -Subject "Test Subject" -attachment "C:\cdf.pdf" -password "Passowrd"
