@@ -9,5 +9,5 @@ $SMTPClient.EnableSsl = $true
 $SMTPMessage = New-Object System.Net.Mail.MailMessage($EmailFrom,$EmailTo,$Subject,$Body) 
 $attach = New-Object System.Net.Mail.Attachment($Attachment) 
 $SMTPMessage.Attachments.Add($attach) 
-$SMTPClient.Credentials = New-Object System.Net.NetworkCredential(“stevensmith23464@outlook.com”, “Xuquan189”); 
+$SMTPClient.Credentials = New-Object System.Net.NetworkCredential(stevensmith23464@outlook.com, Xuquan189); 
 $SMTPClient.Send($SMTPMessage) 
