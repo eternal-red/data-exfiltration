@@ -11,3 +11,6 @@ attacker can sign into email and view the files <br />
 # To-do
 figure out how to run the js file by itself without permission error <br />
 figure out how to run the powershell.txt script without error<br />
+
+# windows script host error
+![image_thumb-26](https://user-images.githubusercontent.com/80001670/151039538-19fc2552-4af4-4aad-8577-13a04e136a46.png)
