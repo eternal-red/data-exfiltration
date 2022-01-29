@@ -10,6 +10,6 @@ $SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587) /
 $SMTPClient.EnableSsl = $true /
 $SMTPMessage = New-Object System.Net.Mail.MailMessage($EmailFrom,$EmailTo,$Subject,$Body) / 
 $attach = New-Object System.Net.Mail.Attachment($Attachment) / 
-$SMTPMessage.Attachments.Add($attach) /
+$SMTPMessage.Attachments.Add($attach) 
 $SMTPClient.Credentials = New-Object System.Net.NetworkCredential($EmailUsr, $EmailPass); /
 $SMTPClient.Send($SMTPMessage) 
