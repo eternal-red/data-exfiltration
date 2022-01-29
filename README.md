@@ -3,7 +3,7 @@ Windows javascript file and folder exfiltration
 
 # requirements
 requires node-js on the target for the js to run
-
+you can only send files as attachments, not folders, however you can specify multiple files to send in one email.
 # process
 upon execution JS file opens Powershell <br />
 turns text stored at link into string <br />
