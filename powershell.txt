@@ -1,7 +1,7 @@
 $EmailFrom = “stevensmith23464@outlook.com”  
 $EmailTo = “fake2039@gmail.com”  
 $Subject = “subject”  
-$Body = “” 
+$Body = “Sucess” 
 $EmailUsr = "stevensmith23464@outlook.com" 
 $EmailPass = "password12354"  
 $Attachment = 'C:\Users\yuri\Downloads\screenshoters\vfood.jpg' 
