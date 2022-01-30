@@ -7,7 +7,8 @@ you can only send files as attachments, not folders, however you can specify mul
 
 # abilities
 powershell.txt can execute multiple powershell commands <br />
-powershell.txt can store the output of previous commands into a variable and use it for future commands
+powershell.txt can store the output of previous commands into a variable and use it for future commands <br />
+powershell.txt can send multiple attachments in one email <br />
 
 # process
 upon execution JS file opens Powershell <br />
