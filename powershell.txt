@@ -13,3 +13,4 @@ $attach = New-Object System.Net.Mail.Attachment($Attachment)
 $SMTPMessage.Attachments.Add($attach) 
 $SMTPClient.Credentials = New-Object System.Net.NetworkCredential($EmailUsr, $EmailPass); 
 $SMTPClient.Send($SMTPMessage) 
+Get-ChildItem
