@@ -16,5 +16,5 @@ run script in powershell through commandline <br />
 powershell stored at C:\Windows\System32\WindowsPowerShell\v1. 0\ <br />
 
 # To-do
-figure out how to run a multiline code in powershell.txt script without error<br />
+figure out how to get js to run on devices without node-js<br />
  
