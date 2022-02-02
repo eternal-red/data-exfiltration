@@ -1,3 +1,0 @@
-get-childItem
-cd /
-get-childItem
