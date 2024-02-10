@@ -1,0 +1,19 @@
+$EmailFrom = “myemail@outlook.com”  
+$EmailTo = “myotheremail@gmail.com”  
+$Subject = “Successful execution”  
+$Body = “placeholder"
+$EmailUsr = "smyemail@outlook.com" 
+$EmailPass = "password12354"  
+$Attachments = 'C:\Users\User\Downloads\File.exe' 
+$Attachment2 = 'C:\Users\User\Downloads\Image.jpg'
+$SMTPServer = “smtp.outlook.com”  
+$SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587) 
+$SMTPClient.EnableSsl = $true 
+$SMTPMessage = New-Object System.Net.Mail.MailMessage($EmailFrom,$EmailTo,$Subject,$Body) 
+$attach = New-Object System.Net.Mail.Attachment($Attachments)  
+$SMTPMessage.Attachments.Add($attach) 
+$attach = New-Object System.Net.Mail.Attachment($Attachment2) 
+$SMTPMessage.Attachments.Add($attach) 
+$SMTPClient.Credentials = New-Object System.Net.NetworkCredential($EmailUsr, $EmailPass); 
+$SMTPClient.Send($SMTPMessage) 
+Get-ChildItem
